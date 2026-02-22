@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapeutic Home Care Centre | Lusaka</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+      html { scroll-behavior: smooth; }
+      body {
+          margin: 0;
+          font-family: 'Poppins', sans-serif;
+          background: #F4F8FB;
+          color: #1a1a1a;
+      }
+
+      /* NAVBAR */
+      .navbar {
+          position: sticky;
+          top: 0;
+          background: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 18px 60px;
+          border-bottom: 1px solid #e5e5e5;
+          z-index: 1000;
+      }
+
+      .logo {
+          font-weight: 600;
+          font-size: 18px;
+          color: #0B3C5D;
+      }
+
+      .nav-links {
+          list-style: none;
+          display: flex;
+          gap: 30px;
+          margin: 0;
+          padding: 0;
+      }
+
+      .nav-links a {
+          text-decoration: none;
+          color: #0B3C5D;
+          font-weight: 500;
+          font-size: 14px;
+      }
+
+      @media (max-width: 768px) {
+          .nav-links { display: none; }
+          .navbar { justify-content: center; padding: 15px; }
+      }
+
+      /* HERO */
+      .hero {
+          padding: 100px 20px 120px;
+          text-align: center;
+          background: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .hero h1 {
+          font-size: 36px;
+          font-weight: 600;
+          color: #0B3C5D;
+          margin-bottom: 15px;
+          line-height: 1.3;
+      }
+
+      .subtitle {
+          font-size: 18px;
+          max-width: 600px;
+          margin: 0 auto 25px auto;
+          color: #444;
+          line-height: 1.5;
+      }
+
+      /* BUTTON */
+      .btn-primary {
+          padding: 14px 32px;
+          background: #1E88E5;
+          color: white;
+          border-radius: 4px;
+          text-decoration: none;
+          font-size: 14px;
+          letter-spacing: 0.5px;
+          transition: 0.3s;
+          white-space: nowrap;
+      }
+
+      .btn-primary:hover { opacity: 0.85; }
+
+      /* SECTIONS */
+      .section {
+          padding: 100px 20px;
+          text-align: center;
+      }
+
+      .section h2 {
+          font-size: 28px;
+          color: #0B3C5D;
+          margin-bottom: 50px;
+      }
+
+      /* PRICING CARDS */
+      .pricing-table {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          flex-wrap: wrap;
+      }
+
+      .pricing-card {
+          background: white;
+          padding: 40px;
+          width: 260px;
+          border: 1px solid #e6eef5;
+          border-radius: 6px;
+          transition: transform 0.3s ease;
+      }
+
+      .pricing-card:hover { transform: translateY(-6px); }
+
+      .price {
+          font-size: 22px;
+          font-weight: 600;
+          color: #1E88E5;
+      }
+
+      /* TESTIMONIALS */
+      .testimonials { background: white; }
+
+      .testimonial-card {
+          max-width: 600px;
+          margin: 20px auto;
+          padding: 40px;
+          border-left: 4px solid #1E88E5;
+          background: #F9FCFF;
+          text-align: left;
+      }
+
+      /* FOOTER */
+      footer {
+          background: #0B3C5D;
+          color: white;
+          padding: 40px;
+          text-align: center;
+          font-size: 13px;
+      }
+
+      /* ANIMATIONS */
+      .fade-in { opacity: 0; animation: fadeIn 1s forwards; }
+      .delay { animation-delay: 0.5s; }
+      .delay2 { animation-delay: 1s; }
+      @keyframes fadeIn { to { opacity: 1; } }
+
+      .reveal {
+          opacity: 0;
+          transform: translateY(40px);
+          transition: 0.8s ease;
+      }
+
+      .reveal.active {
+          opacity: 1;
+          transform: translateY(0);
+      }
+
+      /* FLOATING WHATSAPP BUTTON */
+      .whatsapp-float {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background: #25D366;
+          color: white;
+          font-size: 22px;
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+          z-index: 1000;
+      }
+
+      /* RESPONSIVE HERO */
+      @media (max-width: 768px) {
+          .hero h1 { font-size: 28px; }
+          .subtitle { font-size: 16px; margin-bottom: 20px; }
+          .btn-primary { padding: 12px 26px; font-size: 13px; }
+          .section { padding: 70px 20px; }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">Therapeutic Home Care Centre</div>
+      <ul class="nav-links">
+	<li><a href="#about">About</a></li>
+	<li><a href="#services">Services</a></li>
+	<li><a href="#testimonials">Testimonials</a></li>
+	<li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <h1 class="fade-in">Professional Home Nursing Care</h1>
+      <p class="subtitle fade-in delay">Compassionate and reliable bedside care delivered at home in Lusaka.</p>
+      <a href="https://wa.me/260971949444?text=Hello,%20I%20would%20like%20to%20request%20nursing%20care%20services." class="btn-primary fade-in delay2">Book via WhatsApp</a>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2>About Us</h2>
+      <p>We provide professional nursing and bedside care services tailored to each patient’s medical condition and personal needs. Our goal is to deliver safe, dignified, and compassionate care in the comfort of your home.</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section reveal">
+      <h2>Our Services & Pricing</h2>
+      <div class="pricing-table">
+	<div class="pricing-card">
+	  <h3>Stay-In Nurse</h3>
+	  <p class="price">K650 / day</p>
+	  <p>Nurse Assistant: K600</p>
+	</div>
+	<div class="pricing-card">
+	  <h3>Day Shift</h3>
+	  <p class="price">K300</p>
+	  <p>Nurse Assistant: K250</p>
+	</div>
+	<div class="pricing-card">
+	  <h3>Night Shift</h3>
+	  <p class="price">K350</p>
+	  <p>Nurse Assistant: K300</p>
+	</div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials reveal">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-card">
+	<p>"The nurse was professional and attentive. We felt completely at peace knowing our mother was in good hands."</p>
+	<h4>– Client, Lusaka</h4>
+      </div>
+      <div class="testimonial-card">
+	<p>"Very reliable and compassionate service. Highly recommended."</p>
+	<h4>– Family Member</h4>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <h2>Need Care for a Loved One?</h2>
+      <p>Contact us today to arrange professional home nursing support.</p>
+      <a href="https://wa.me/260971949444?text=Hello,%20I%20would%20like%20to%20request%20nursing%20care%20services." class="btn-primary">Request Service</a>
+    </section>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/260971949444?text=Hello,%20I%20would%20like%20to%20request%20nursing%20care%20services." class="whatsapp-float">💬</a>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 Therapeutic Home Care Centre | Lusaka, Zambia</p>
+      <p style="font-size:12px;opacity:0.9;">All services are provided by qualified nursing personnel. Care is tailored according to patient assessment and condition.</p>
+    </footer>
+
+    <!-- JS FOR SCROLL REVEAL -->
+    <script>
+      function revealOnScroll() {
+          const reveals = document.querySelectorAll(".reveal");
+          reveals.forEach((element) => {
+              const windowHeight = window.innerHeight;
+              const elementTop = element.getBoundingClientRect().top;
+              const revealPoint = 100;
+              if (elementTop < windowHeight - revealPoint) {
+                  element.classList.add("active");
+              }
+          });
+      }
+      window.addEventListener("scroll", revealOnScroll);
+    </script>
+
+  </body>
+  </html>
