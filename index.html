@@ -203,6 +203,35 @@
           box-shadow: 0 5px 15px rgba(0,0,0,0.2);
           z-index: 1000;
       }
+      .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+      }
+
+      .service-card {
+      background: #E8F0FE;
+      padding: 25px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: left;
+      }
+
+      .service-card h3 {
+      color: #1E88E5;
+      margin-bottom: 12px;
+      font-size: 18px;
+      }
+
+      .service-card ul {
+      padding-left: 18px;
+      }
+
+      .service-card li {
+      margin-bottom: 8px;
+      font-size: 14px;
+      }
 
       /* RESPONSIVE HERO */
       @media (max-width: 768px) {
@@ -265,6 +294,80 @@
 	</div>
       </div>
     </section>
+
+    <section id="services-provided" class="section reveal">
+      <h2>Services Provided</h2>
+      <div class="services-grid">
+	<!-- Medical Care -->
+	<div class="service-card">
+	  <h3>🏥 Medical Care Services</h3>
+	  <ul>
+	    <li>Medication administration</li>
+	    <li>Wound care & dressing</li>
+	    <li>Injection services</li>
+	    <li>Vital signs monitoring</li>
+	    <li>Chronic disease management (BP, Diabetes, Asthma)</li>
+	    <li>Post-surgical care</li>
+	  </ul>
+	</div>
+	<!-- Nursing Care -->
+	<div class="service-card">
+	  <h3>👩🏽‍⚕️ Nursing Care Services</h3>
+	  <ul>
+	    <li>General patient assessment</li>
+	    <li>Pain management</li>
+	    <li>Catheter care</li>
+	    <li>NG tube feeding</li>
+	    <li>IV therapy</li>
+	    <li>Pressure sore prevention</li>
+	  </ul>
+	</div>
+	<!-- Personal Care -->
+	<div class="service-card">
+	  <h3>🛁 Personal Care Services</h3>
+	  <ul>
+	    <li>Bathing & grooming</li>
+	    <li>Dressing assistance</li>
+	    <li>Toileting assistance</li>
+	    <li>Feeding support</li>
+	    <li>Mobility assistance</li>
+	    <li>Bed making</li>
+	  </ul>
+	</div>
+	<!-- Specialized Care -->
+	<div class="service-card">
+	  <h3>🧠 Specialized Care Services</h3>
+	  <ul>
+	    <li>Dementia care</li>
+	    <li>Stroke rehabilitation support</li>
+	    <li>Palliative care</li>
+	    <li>Cancer care support</li>
+	    <li>Disability support</li>
+	  </ul>
+	</div>
+	<!-- Home Support -->
+	<div class="service-card">
+	  <h3>🏡 Home Support Services</h3>
+	  <ul>
+	    <li>Health education for family</li>
+	    <li>Caregiver training</li>
+	    <li>Nutritional guidance</li>
+	    <li>Light housekeeping related to patient care</li>
+	    <li>Appointment coordination</li>
+	  </ul>
+	</div>
+	<!-- Emotional & Social Support -->
+	<div class="service-card">
+	  <h3>❤️ Emotional & Social Support</h3>
+	  <ul>
+	    <li>Companionship</li>
+	    <li>Counseling support</li>
+	    <li>Spiritual support (if requested)</li>
+	    <li>Family updates & communication</li>
+	  </ul>
+	</div>
+      </div>
+      </section>
 
     <!-- TESTIMONIALS -->
     <section id="testimonials" class="section testimonials reveal">
