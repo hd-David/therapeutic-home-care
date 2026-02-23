@@ -34,6 +34,13 @@
           font-weight: 600;
           font-size: 18px;
           color: #0B3C5D;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+      }
+
+      .logo img {
+          height: 40px; /* adjust logo size */
       }
 
       .nav-links {
@@ -119,12 +126,12 @@
       }
 
       .pricing-card {
-          background: white;
+          background: #E8F0FE; /* lighter blue for cards */
           padding: 40px;
           width: 260px;
-          border: 1px solid #e6eef5;
-          border-radius: 6px;
+          border-radius: 8px;
           transition: transform 0.3s ease;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       }
 
       .pricing-card:hover { transform: translateY(-6px); }
@@ -154,6 +161,11 @@
           padding: 40px;
           text-align: center;
           font-size: 13px;
+      }
+
+      footer a {
+          color: #ffffff;
+          text-decoration: underline;
       }
 
       /* ANIMATIONS */
@@ -206,7 +218,11 @@
 
     <!-- NAVBAR -->
     <nav class="navbar">
-      <div class="logo">Therapeutic Home Care Centre</div>
+      <div class="logo">
+	<!-- Replace 'logo.png' with your actual logo file -->
+	<img src="logo.png" alt="Therapeutic Home Care Centre Logo">
+	Therapeutic Home Care Centre
+      </div>
       <ul class="nav-links">
 	<li><a href="#about">About</a></li>
 	<li><a href="#services">Services</a></li>
@@ -219,7 +235,7 @@
     <header class="hero">
       <h1 class="fade-in">Professional Home Nursing Care</h1>
       <p class="subtitle fade-in delay">Compassionate and reliable bedside care delivered at home in Lusaka.</p>
-      <a href="https://wa.me/260971949444?text=Hello,%20I%20would%20like%20to%20request%20nursing%20care%20services." class="btn-primary fade-in delay2">Book via WhatsApp</a>
+      <a href="https://wa.me/260954175791?text=Hello,%20I%20would%20like%20to%20request%20nursing%20care%20services." class="btn-primary fade-in delay2">Book via WhatsApp</a>
     </header>
 
     <!-- ABOUT -->
@@ -267,16 +283,18 @@
     <section id="contact" class="section reveal">
       <h2>Need Care for a Loved One?</h2>
       <p>Contact us today to arrange professional home nursing support.</p>
-      <a href="https://wa.me/260971949444?text=Hello,%20I%20would%20like%20to%20request%20nursing%20care%20services." class="btn-primary">Request Service</a>
+      <p><strong>Phone:</strong> +26095-417-5791<br>
+	<strong>Email:</strong> <a href="mailto:homecarecentretherapeutic@gmail.com">homecarecentretherapeutic@gmail.com</a></p>
+      <a href="https://wa.me/260954175791?text=Hello,%20I%20would%20like%20to%20request%20nursing%20care%20services." class="btn-primary">Request Service</a>
     </section>
 
     <!-- FLOATING WHATSAPP -->
-    <a href="https://wa.me/260971949444?text=Hello,%20I%20would%20like%20to%20request%20nursing%20care%20services." class="whatsapp-float">💬</a>
+    <a href="https://wa.me/260954175791?text=Hello,%20I%20would%20like%20to%20request%20nursing%20care%20services." class="whatsapp-float">💬</a>
 
     <!-- FOOTER -->
     <footer>
       <p>© 2026 Therapeutic Home Care Centre | Lusaka, Zambia</p>
-      <p style="font-size:12px;opacity:0.9;">All services are provided by qualified nursing personnel. Care is tailored according to patient assessment and condition.</p>
+      <p style="font-size:12px;opacity:0.9;">Phone: +26095-417-5791 | Email: <a href="mailto:homecarecentretherapeutic@gmail.com">homecarecentretherapeutic@gmail.com</a></p>
     </footer>
 
     <!-- JS FOR SCROLL REVEAL -->
